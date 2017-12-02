@@ -1,0 +1,42 @@
+FrameLayout
+http://blog.csdn.net/yihui823/article/details/6702273
+
+最简单的布局。所有放在布局里的控件，都按照层次堆叠在屏幕的左上角。后加进来的控件覆盖前面的控件。
+在FrameLayout布局里，定义任何空间的位置相关的属性都毫无意义。控件自动的堆放在左上角，根本不听你的控制。
+1、
+```
+       <TextView
+       android：layout_widh=“fill_parent”
+       android：layout_height=”wrap_content”>
+```
+这样的时候会层叠起来。比如
+ ![](jpg/framelayout_01.png)
+2、
+```
+     <TextView
+     android：layout_widh=“fill_parent”
+     android：layout_height=”wrap_content”
+     android：gravity=“right”>
+```
+![](jpg/framelayout_02.png)
+解析:靠右的原因是fill_parent，文本框的宽度就是屏幕的宽度实际上还是在那一层的。
+改一下：
+```
+    <TextView
+    android：layout_widh=“wrap_content”
+    android：layout_height=”wrap_content”
+    android：gravity=“right”>
+```
+结果和图一一样了~
+3、
+```
+    <TextView
+    android：layout_widh=“fill_parent”
+    android：layout_height=”wrap_content”
+    android：layout_gravity=“right”>
+```
+结果和图一一样。
+解析：子控件可以通过android:layout_gravity属性来控制自己在父控件中的位置。由于width是fill_parent,所以这个控件表面上和没有设置layout_gravity是一样的。如果把这个控件的width改变一下，变成wrap_content，那就和图二是一样的。
+
+Framelayout的作用：
+当你需要自己写一个View的时候，在View里面已经完成了你的逻辑(例如游戏^_^)，那么这个View只需要一个容器放置，就可以使用FrameLayout了。虽然用其他的布局也可以，但是用最简单的不是更省系统资源么。
