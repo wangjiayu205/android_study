@@ -45,7 +45,9 @@ git reset HEAD xxx.md就是把这个文件的add撤销了
 3、 git init #初始化本地仓库
 4、 git add xxx #添加要push到远程仓库的文件或文件夹
 5、 git commit -m ‘first commit’
-6、 git remote add origin https://github.com/yourgithubID/gitRepo.git #建立远程仓库
+6、 git remote add origin https://github.com/yourgithubID/gitRepo.git 
+7、 git push -u origin master #将本地仓库push到远程仓库
+#建立远程仓库
 
 假如因为本地没有readme.md文件报错，解决方法：
 第一步：可以通过如下命令进行代码合并【注：pull=fetch+merge]
@@ -53,7 +55,7 @@ git pull --rebase origin master
 执行上面代码后可以看到本地代码库中多了README.md文件
 第二步：此时再执行语句 git push -u origin master即可完成代码上传到github
 
-7、 git push -u origin master #将本地仓库push到远程仓库
+
 
 
 问题：
