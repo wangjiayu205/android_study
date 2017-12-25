@@ -1,0 +1,3 @@
+http://blog.csdn.net/zuolongsnail/article/details/6574211
+&emsp;&emsp;Intent是不同组件之间相互通讯的纽带，封装了不同组件之间通讯的条件。Intent本身是定义为一个类别(Class)，一个Intent对象表达一个目的(Goal)或期望(Expectation)，叙述其所期望的服务或动作、与动作有关的数据等。Android则根据此Intent对象之叙述，负责配对，找出相配的组件，然后将 Intent对象传递给所找到的组件，Android的媒婆任务就完成了。
+<font color="red"><strong>当接收到ContentResolver发出的请求后，contentProvider被激活。而其它三种组件──activity、服务和广播接收器被一种叫做intent的异步消息所激活。</font></strong>

@@ -1,0 +1,15 @@
+[原图传送门](http://blog.csdn.net/u012702547/article/details/50586946)
+#####matrix
+matrix表示原图从ImageView的左上角开始绘制，如果原图大于ImageView，那么多余的部分则剪裁掉，如果原图小于ImageView，那么对原图不做任何处理。
+#####fitXY
+fitXY的目标是填充整个ImageView，为了完成这个目标，它需要对图片进行一些缩放操作，在缩放的过程中，**它不会按照原图的比例来缩放**。
+#####fitStart
+将图片按比例缩放至View的宽度或者高度（取宽和高的最小值），然后居上或者居左显示（与前面缩放至宽还是高有关）。big图片是缩放至ImageView的宽度，然后居上显示，small图片是缩放至ImageView的高度，然后居左显示。
+#####fitCenter
+fitCenter和fitStart基本一样，唯一不同的是fitCenter将图片按比例缩放之后是居中显示。
+#####fitEnd
+fitEnd和fitStart也基本一样，唯一不同的是fitEnd将图片按比例缩放之后是居右或者居下显示。
+#####center
+center表示将原图按照原来的大小居中显示，如果原图的大小超过了ImageView的大小，那么剪裁掉多余部分，只显示中间一部分图像。
+#####centerCrop
+centerCrop的目标是将ImageView填充满，故按比例缩放原图，使得可以将ImageView填充满，同时将多余的宽或者高剪裁掉。
