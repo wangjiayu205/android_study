@@ -36,6 +36,26 @@ git reset HEAD xxx.md就是把这个文件的add撤销了
 **git config user.email "wangwj_hnu@163.com"**
 **git pull <远程主机名> <远程分支名>:<本地分支名>**
 
+本地创建仓库上传到远程仓库的具体步骤如下：
+前提：在github上手动创建仓库gitRepo。
+
+在本地按照如下的命令进行
+1、 mkdir gitRepo #如果是已存在的工程项目，则直接cd到项目根目录下，不需要新建。
+2、 cd gitRepo
+3、 git init #初始化本地仓库
+4、 git add xxx #添加要push到远程仓库的文件或文件夹
+5、 git commit -m ‘first commit’
+6、 git remote add origin https://github.com/yourgithubID/gitRepo.git #建立远程仓库
+
+假如因为本地没有readme.md文件报错，解决方法：
+第一步：可以通过如下命令进行代码合并【注：pull=fetch+merge]
+git pull --rebase origin master
+执行上面代码后可以看到本地代码库中多了README.md文件
+第二步：此时再执行语句 git push -u origin master即可完成代码上传到github
+
+7、 git push -u origin master #将本地仓库push到远程仓库
+
+
 问题：
 checkout
 reset
