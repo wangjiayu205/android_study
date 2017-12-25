@@ -28,6 +28,13 @@ git reset HEAD xxx.md就是把这个文件的add撤销了
 **git reset --hard HEAD^**&emsp;&emsp;回退到上一个版本，HEAD^^回退到上两个版本；HEAD~100回退到之前100个版本的时候。回退完成之后会提示你现在在某某版本，那个id号也是commit id吧。这时候git log就会显示到这个版本的所有commit，可以输入git reflog，查看所有的commit和reset，每一行前面的编号都是该状态的commit id。
 **git checkout -- readme.md**就是撤销该文件的修改
 
+ **git remote add wangwj https://github.com/wangwenj/android_study.git**
+ 添加一个新的远程仓库，并且把远程仓库重命名为xxx
+
+**git push -u wangwj master**  
+**git config user.name "wangwj"**
+**git config user.email "wangwj_hnu@163.com"**
+**git pull <远程主机名> <远程分支名>:<本地分支名>**
 
 问题：
 checkout
