@@ -1,0 +1,1 @@
+storefront  adj.日常的
