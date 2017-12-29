@@ -17,3 +17,7 @@ LinearLayoutManager的实例需要三个参数，第一个contex；第二个布�
 
 http://blog.csdn.net/lmj623565791/article/details/45059587
 RecyclerView使用完全解析
+
+注意事项：
+context是activity的基类  初始化context只用指定该activity就可以了  使用this
+显示使用visible

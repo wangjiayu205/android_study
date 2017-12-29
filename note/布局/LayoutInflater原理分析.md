@@ -34,3 +34,11 @@ Inflate(resId , parent, true ) 创建temp，然后执行root.addView(temp, param
 由上面已经能够解释：
 Inflate(resId , null )不能正确处理宽和高是因为：layout_width,layout_height是相对了父级设置的，必须与父级的LayoutParams一致。而此temp的getLayoutParams为null
 Inflate(resId , parent,false ) 可以正确处理，因为temp.setLayoutParams(params);这个params正是root.generateLayoutParams(attrs);得到的。
+
+
+使用方法：
+声明一个inflater：
+ private LayoutInflater inflater;
+初始化一个inflater：
+inflater = LayoutInflater.from(context);
+    
