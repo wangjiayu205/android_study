@@ -1,0 +1,2 @@
+AutoResponder勾选Enable rules（开启或禁用自动重定向功能。）
+然后把add rules，可以把需要针对的url从左边拖到这里，然后再在下面选择针对这个rrl我们会返回的本地文件的数据。
