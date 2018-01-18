@@ -62,3 +62,8 @@ git pull --rebase origin master
 checkout
 reset
 reset --hard
+
+分支有关：
+git branch 到当前分支
+git fetch 获取所有分支信息
+git checkout 分支 切到该分支
