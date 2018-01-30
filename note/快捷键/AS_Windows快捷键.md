@@ -1,5 +1,5 @@
-###快捷键：
-#####常用
+# AS_Windows快捷键：
+
 ctrl+shift+c     复制该文件的位置
 @string那里：    ctrl和+ 显示原代码 ctr和- 显示字符串
 alt+insert       可以选择需要自动生成的方法~构造器~等
@@ -23,3 +23,5 @@ ctrl shift R    全局替换（Edit->find->replace in place）
 ctrl H          查找这个类的子类
 ctrl shift -   收起所有方法
 ctrl ail o   删除所有没用到的import
+
+打断点的地方 右键选择annotate  就可以看到每次是谁修改的（git的信息）
