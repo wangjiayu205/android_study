@@ -3,6 +3,7 @@
 ctrl+shift+c     复制该文件的位置
 @string那里：    ctrl和+ 显示原代码 ctr和- 显示字符串
 alt+insert       可以选择需要自动生成的方法~构造器~等
+Ctrl + F12(Windows/Linux)   文件结构弹窗
 ctrl+p           提示需要添加的参数类型
 alt+enter        提示加入jar包这一类的东西
 shift+shift：    search everywhere
@@ -22,6 +23,7 @@ ctrl shift F    全局查找，匹配整个工程任何一个地方（Edit->find
 ctrl shift R    全局替换（Edit->find->replace in place）
 ctrl H          查找这个类的子类
 ctrl shift -   收起所有方法
-ctrl ail o   删除所有没用到的import
+ctrl alt o   删除所有没用到的import
+
 
 打断点的地方 右键选择annotate  就可以看到每次是谁修改的（git的信息）
